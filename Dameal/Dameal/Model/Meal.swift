@@ -18,7 +18,7 @@ struct Meal: Codable {
     var instructionsDisplay: String {
         strInstructions.split(separator: "\r\n")
             .enumerated()
-            .reduce(""){ (pv, el) in pv + "\(el.0 + 1). \(el.1)\n" }
+            .reduce(""){ (pv, el) in pv + "\(el.0 + 1). \(el.1)\n\n" }
     }
     
     static func getMeals(onerror: @escaping ()->Void, oncompletion: @escaping ([Meal])->Void){

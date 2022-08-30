@@ -234,41 +234,57 @@
                                         <color key="textColor" red="0.027450980390000001" green="0.46666666670000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbV-Qw-lxQ">
-                                        <rect key="frame" x="40" y="120" width="334" height="286.5"/>
-                                        <mutableString key="text">To make the pastry, measure the flour into a bowl and rub in the butter with your fingertips until the mixture resembles fine breadcrumbs. Add the water, mixing to form a soft dough.
-Roll out the dough on a lightly floured work surface and use to line a 20cm/8in flan tin. Leave in the fridge to chill for 30 minutes.
-Preheat the oven to 200C/400F/Gas 6 (180C fan).
-Line the pastry case with foil and fill with baking beans. Bake blind for about 15 minutes, then remove the beans and foil and cook for a further five minutes to dry out the base.
-For the filing, spread the base of the flan generously with raspberry jam.
-Melt the butter in a pan, take off the heat and then stir in the sugar. Add ground almonds, egg and almond extract. Pour into the flan tin and sprinkle over the flaked almonds.
-Bake for about 35 minutes. If the almonds seem to be browning too quickly, cover the tart loosely with foil to prevent them burning.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="012345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBd-Ot-3Ts">
                                         <rect key="frame" x="314" y="49" width="60" height="20"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAn-BM-mI1">
+                                        <rect key="frame" x="40" y="140" width="334" height="322"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbV-Qw-lxQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="286.5"/>
+                                                <string key="text">To make the pastry, measure the flour into a bowl and rub in the butter with your fingertips until the mixture resembles fine breadcrumbs. Add the water, mixing to form a soft dough.
+Roll out the dough on a lightly floured work surface and use to line a 20cm/8in flan tin. Leave in the fridge to chill for 30 minutes.
+Preheat the oven to 200C/400F/Gas 6 (180C fan).
+Line the pastry case with foil and fill with baking beans. Bake blind for about 15 minutes, then remove the beans and foil and cook for a further five minutes to dry out the base.
+For the filing, spread the base of the flan generously with raspberry jam.
+Melt the butter in a pan, take off the heat and then stir in the sugar. Add ground almonds, egg and almond extract. Pour into the flan tin and sprinkle over the flaked almonds.
+Bake for about 35 minutes. If the almonds seem to be browning too quickly, cover the tart loosely with foil to prevent them burning.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QbV-Qw-lxQ" firstAttribute="width" secondItem="JAn-BM-mI1" secondAttribute="width" multiplier="1.29412" priority="250" id="66H-WH-AcU"/>
+                                            <constraint firstItem="rnZ-Re-tLB" firstAttribute="trailing" secondItem="QbV-Qw-lxQ" secondAttribute="trailing" id="DbB-IY-twZ"/>
+                                            <constraint firstItem="QbV-Qw-lxQ" firstAttribute="height" secondItem="JAn-BM-mI1" secondAttribute="height" multiplier="1.67969" priority="250" id="G5M-0v-1bt"/>
+                                            <constraint firstItem="QbV-Qw-lxQ" firstAttribute="leading" secondItem="JAn-BM-mI1" secondAttribute="leading" id="Un9-TR-nDl"/>
+                                            <constraint firstItem="QbV-Qw-lxQ" firstAttribute="top" secondItem="JAn-BM-mI1" secondAttribute="top" id="fWG-SH-QjC"/>
+                                            <constraint firstAttribute="trailing" secondItem="QbV-Qw-lxQ" secondAttribute="trailing" constant="-67" id="oM8-By-We7"/>
+                                            <constraint firstAttribute="bottom" secondItem="QbV-Qw-lxQ" secondAttribute="bottom" id="xZ4-bw-zW7"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="Yur-3N-d1c"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="rnZ-Re-tLB"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="KQs-K7-gzd" firstAttribute="top" secondItem="yRz-9i-Hkz" secondAttribute="bottom" id="5Q0-l1-6Vd"/>
+                                    <constraint firstItem="RI1-ym-C1p" firstAttribute="top" secondItem="Jsk-BL-9m4" secondAttribute="top" constant="20" id="5Tf-zU-Ghq"/>
                                     <constraint firstItem="bBd-Ot-3Ts" firstAttribute="top" secondItem="RI1-ym-C1p" secondAttribute="bottom" id="8eL-Rh-uZb"/>
                                     <constraint firstItem="yRz-9i-Hkz" firstAttribute="top" secondItem="RI1-ym-C1p" secondAttribute="bottom" id="B5j-5e-Bb8"/>
-                                    <constraint firstItem="RI1-ym-C1p" firstAttribute="top" secondItem="Jsk-BL-9m4" secondAttribute="top" constant="20" id="KU5-i6-Xyq"/>
+                                    <constraint firstAttribute="bottom" secondItem="JAn-BM-mI1" secondAttribute="bottom" constant="40" id="CJD-jg-ihq"/>
                                     <constraint firstItem="ujc-NF-xAe" firstAttribute="top" secondItem="KQs-K7-gzd" secondAttribute="bottom" constant="10" id="Mxb-kX-0Ja"/>
+                                    <constraint firstItem="JAn-BM-mI1" firstAttribute="centerX" secondItem="Jsk-BL-9m4" secondAttribute="centerX" id="WnT-uE-qyd"/>
                                     <constraint firstItem="yRz-9i-Hkz" firstAttribute="leading" secondItem="RI1-ym-C1p" secondAttribute="leading" id="b7T-hn-1pn"/>
-                                    <constraint firstItem="QbV-Qw-lxQ" firstAttribute="top" secondItem="ujc-NF-xAe" secondAttribute="bottom" id="ent-Gg-TEs"/>
-                                    <constraint firstItem="QbV-Qw-lxQ" firstAttribute="leading" secondItem="Jsk-BL-9m4" secondAttribute="leading" constant="40" id="mh2-LW-dbI"/>
-                                    <constraint firstAttribute="trailing" secondItem="QbV-Qw-lxQ" secondAttribute="trailing" constant="40" id="sA8-5d-f06"/>
+                                    <constraint firstItem="JAn-BM-mI1" firstAttribute="width" secondItem="Jsk-BL-9m4" secondAttribute="width" constant="-80" id="cdy-zl-D5r"/>
+                                    <constraint firstItem="JAn-BM-mI1" firstAttribute="top" secondItem="ujc-NF-xAe" secondAttribute="bottom" constant="20" id="fRf-X7-WoZ"/>
                                     <constraint firstItem="RI1-ym-C1p" firstAttribute="leading" secondItem="Jsk-BL-9m4" secondAttribute="leading" constant="40" id="tg1-ig-nUi"/>
                                     <constraint firstItem="KQs-K7-gzd" firstAttribute="leading" secondItem="yRz-9i-Hkz" secondAttribute="leading" id="uA1-tA-qcq"/>
                                     <constraint firstAttribute="trailing" secondItem="bBd-Ot-3Ts" secondAttribute="trailing" constant="40" id="w9r-vf-eLy"/>
-                                    <constraint firstItem="QbV-Qw-lxQ" firstAttribute="leading" secondItem="ujc-NF-xAe" secondAttribute="leading" id="xVr-8L-6Hv"/>
                                     <constraint firstItem="ujc-NF-xAe" firstAttribute="leading" secondItem="KQs-K7-gzd" secondAttribute="leading" id="yZK-6H-z4N"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -278,6 +294,7 @@ Bake for about 35 minutes. If the almonds seem to be browning too quickly, cover
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="vsB-P0-9ce"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KY8-wv-cpj" firstAttribute="top" secondItem="f56-xv-Y5w" secondAttribute="top" id="3tR-NF-rQk"/>
