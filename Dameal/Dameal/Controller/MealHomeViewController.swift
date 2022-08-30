@@ -17,9 +17,7 @@ class MealHomeViewController: UIViewController, UITableViewDelegate, UITableView
     
     func setupNavigation(){
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.tintColor = UIColor(red: 15, green: 176, blue: 128, alpha: 1)
         navigationItem.title = "Meals"
-        navigationItem.titleView?.tintColor = UIColor(red: 15, green: 176, blue: 128, alpha: 1)
     }
     
     func setupTableView(){

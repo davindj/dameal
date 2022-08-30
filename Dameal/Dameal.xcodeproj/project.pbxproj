@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7362B0A28BE52FD008D490D /* AboutDeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7362B0928BE52FD008D490D /* AboutDeveloperViewController.swift */; };
 		D744A9B828BD05980003836A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A9B728BD05980003836A /* Meal.swift */; };
 		D744A9C128BDB5ED0003836A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A9C028BDB5ED0003836A /* Cache.swift */; };
 		D7E7FCEC28BD009D001710ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7FCEB28BD009D001710ED /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7362B0928BE52FD008D490D /* AboutDeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDeveloperViewController.swift; sourceTree = "<group>"; };
 		D744A9B728BD05980003836A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D744A9C028BDB5ED0003836A /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		D7E7FCE828BD009D001710ED /* Dameal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dameal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D7E7FCEF28BD009D001710ED /* MealHomeViewController.swift */,
+				D7362B0928BE52FD008D490D /* AboutDeveloperViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				D744A9B828BD05980003836A /* Meal.swift in Sources */,
 				D7E7FCEC28BD009D001710ED /* AppDelegate.swift in Sources */,
 				D744A9C128BDB5ED0003836A /* Cache.swift in Sources */,
+				D7362B0A28BE52FD008D490D /* AboutDeveloperViewController.swift in Sources */,
 				D7FC2A8D28BE262000886E2F /* MMealTableViewCell.swift in Sources */,
 				D7E7FCEE28BD009D001710ED /* SceneDelegate.swift in Sources */,
 			);
