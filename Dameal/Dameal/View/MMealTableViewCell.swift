@@ -21,6 +21,7 @@ class MMealTableViewCell: UITableViewCell {
         loadImage(urlString: meal.strMealThumb)
     }
     
+    private static let semaphore = DispatchSemaphore(value: 3)
     func loadImage(urlString: String){
         let keyCache = urlString as NSString
         if Cache.isImageCached(key: keyCache){
@@ -31,16 +32,21 @@ class MMealTableViewCell: UITableViewCell {
         mealImage.image = UIImage(systemName: "circle.dashed")
         let url = URL(string: urlString)!
         let request = URLRequest(url: url)
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data, data.count > 0 {
-                if let image = UIImage(data: data) {
+        DispatchQueue.global().async {
+            MMealTableViewCell.semaphore.wait()
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                if let data = data, data.count > 0, let image = UIImage(data: data) {
                     Cache.setImageCache(key: keyCache, image: image)
+                    DispatchQueue.main.async {
+                        self.mealImage.image = image
+                    }
                 }else{
-                    self.mealImage.image = UIImage(systemName: "xmark.octagon")
+                    DispatchQueue.main.async {
+                        self.mealImage.image = UIImage(systemName: "xmark.octagon")
+                    }
                 }
-            } else {
-                self.mealImage.image = UIImage(systemName: "xmark.octagon")
-            }
-        }.resume()
+                MMealTableViewCell.semaphore.signal()
+            }.resume()
+        }
     }
 }
