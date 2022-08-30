@@ -61,5 +61,20 @@ class MealHomeViewController: UIViewController, UITableViewDelegate, UITableView
             return UITableViewCell()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveToDetail", sender: meals[indexPath.row])
+    }
+    
+    override func prepare(
+      for segue: UIStoryboardSegue,
+      sender: Any?
+    ) {
+      if segue.identifier == "moveToDetail" {
+        if let detaiViewController = segue.destination as? MealDetailViewController {
+          detaiViewController.meal = sender as? Meal
+        }
+      }
+    }
 }
 

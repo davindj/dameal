@@ -12,8 +12,13 @@ struct Meal: Codable {
     var type: String{
         "\(strCategory); \(strArea)"
     }
-    var instructions: [String] {
-        strInstructions.split(separator: "\n").map{ String($0) }
+    var tagsDisplay: String{
+        return strTags ?? "-"
+    }
+    var instructionsDisplay: String {
+        strInstructions.split(separator: "\r\n")
+            .enumerated()
+            .reduce(""){ (pv, el) in pv + "\(el.0 + 1). \(el.1)\n" }
     }
     
     static func getMeals(onerror: @escaping ()->Void, oncompletion: @escaping ([Meal])->Void){
